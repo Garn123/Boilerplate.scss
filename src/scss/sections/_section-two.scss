@@ -1,0 +1,47 @@
+.section-two {
+    padding: 30px 16px;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            width: 109px;
+            margin: 30px 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.25;
+            text-align: center;
+            margin: 10px 0;
+            color: #333333;
+                @include tablet {
+                    margin: 10px 15%;
+                }
+                @include desktop {
+                    font-size: 36px;
+                    margin: 10px 36%;
+                    margin-bottom: 20px;
+                }
+        }
+
+        p {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333333;
+            text-align: center;
+            font-family: 'Arimo', sans-serif;
+            line-height: 1.5;
+                @include tablet {
+                    margin: 20px 15%;
+                }
+                @include desktop {
+                    margin: 10px 35%;
+                    margin-bottom: 64px;
+                }
+        }
+    }
+}

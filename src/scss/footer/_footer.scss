@@ -1,0 +1,87 @@
+footer {
+    border-top: 1px solid rgba(0,0,0,0.1);
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 16px;
+        
+            @include tablet {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+            @include desktop {
+                justify-content: space-around;
+                padding: 16px;
+                max-width: 96rem;
+                margin: 0 200px;
+            }
+        
+        .footer-container__links{
+            width: 100%;
+            padding: 16px;
+                @include desktop {
+                    width: 10%;
+                    padding: 32px;
+                }
+        }
+        .footer-links {
+            width: 100%;
+
+                div {
+                    height: 50px;
+                    width: 50px;
+                    margin: 16px;
+                }
+        }
+
+        .card-1, .card-2 {
+            width: 50%;
+                @include desktop {
+                    width: 30%;
+                }
+        }
+
+           
+        .card-11, .card-22, .card-33 {
+             @include desktop {
+                width: 30%;
+                padding: 0;
+            }        
+        }
+
+        .footer-container__card {
+            padding: 16px;
+            @include desktop {
+                padding: 32px;
+            }
+            h3 {
+                font-size: 17px;
+                font-family: 'Poppins';
+                color: #333333;
+                margin: 16px;
+                letter-spacing: 1.3px;
+                font-weight: 600;
+                @include desktop {
+                    margin: 16px 0;
+                }
+            }
+
+            li{
+                margin: 16px;
+                @include desktop {
+                    margin: 16px 0;
+                }
+
+            }
+
+            li a{
+                color: #000000B3;
+                opacity: 0.9;
+                font-weight: 100;
+            }
+        }
+    } 
+}

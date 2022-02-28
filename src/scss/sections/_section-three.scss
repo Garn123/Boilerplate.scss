@@ -1,0 +1,35 @@
+.section-three {
+    background-image: linear-gradient(to bottom right,#e02aff, #c12127, #ff4b01, #fb8817);
+    padding: 64px 16px;
+    .section-three__container {
+        display: flex;
+        flex-direction: column;          
+    }
+
+    h2 {
+        padding-bottom: 20px;
+        font-size: 24px;
+        color: #fff;
+        font-family: Poppins,sans-serif;
+        font-weight: 600;
+        line-height: 1.25;
+        text-align: center;
+            @include desktop {
+                font-size: 48px;
+            }
+    }
+
+    p {
+        font-size: 16px;
+        color: #fff;
+        text-align: center;
+        line-height: 1.5;
+        font-family: 'Arimo', sans-serif;
+            @include tablet {
+                margin: 0 15%;
+            }
+            @include desktop {
+                margin: 0 36%;
+            }
+    }
+}
